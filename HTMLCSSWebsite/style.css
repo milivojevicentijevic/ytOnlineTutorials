@@ -1,7 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --blue: #3475ca; /* rgb(52, 117, 202) */
+    --white: #fafafa;
+    --fontSize: 16px;
+    --fontFamily: 'Poppins', sans-serif;
+}
+/************************
+basic styles
+************************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    line-height: 1.5;
+}
+.container {
+    max-width: 89%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+/************************
+mainHeader
+************************/
+.mainHeader {
+    background-image: linear-gradient(rgba(52, 117, 202,.8),rgba(52, 117, 202,.8)), url(assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainHeader nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.mainHeader .logo {
+    color: var(--white);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.mainHeader .toggle {
+    color: var(--white);
+    background-image: url(assets/toggle.png);
+    background-size: cover;
+    width: 36px;
+    height: 28px;
+    cursor: pointer;
+}
+
+
+
+.mainHeader .content {
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.mainHeader .content h2 {
+    color: var(--white);
+    font-size: 4.2rem;
+}
+.mainHeader .content p {
+    color: var(--white);
+    font-size: 1.4rem;
 }
