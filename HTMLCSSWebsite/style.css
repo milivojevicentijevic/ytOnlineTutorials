@@ -92,13 +92,12 @@ about
     align-items: center;
 }
 .about article:first-child {
-    height: 90vh;
     flex: 0 0 50%;
-    padding: 0 7%;
     background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 7%;
 }
 .about h2 {
     padding-bottom: 20px;
@@ -108,7 +107,6 @@ about
 }
 .about article:last-child {
     flex: 0 0 50%;
-    height: 90vh;
 }
 .about article img {
     width: 100%;
@@ -209,4 +207,37 @@ clients
 }
 .clients article:last-child div img:hover{
     opacity: 1;
+}
+/************************
+testimonials
+************************/
+.testimonials {
+    background-color: var(--veryDarkBlue);
+    padding: 120px 0;
+}
+.testimonials h2 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+.testimonials article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials article div {
+    flex: 0 0 48%;
+    padding: 70px 50px;
+    background-color: var(--white);
+}
+.testimonials article div p {
+    color: var(--veryDarkBlue);
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.testimonials article div h4 {
+    color: var(--blue);
+    font-size: 1.2rem;
+    text-align: right;
 }
