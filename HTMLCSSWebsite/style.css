@@ -6,6 +6,7 @@
     --white: #fafafa;
     --fontSize: 16px;
     --fontFamily: 'Poppins', sans-serif;
+    --transition: .3s ease;
 }
 /************************
 basic styles
@@ -118,11 +119,11 @@ services
 ************************/
 .services {
     background-color: var(--veryDarkBlue);
-    height: 70vh;
+    height: 65vh;
 }
 .services article:first-child {
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 0 80px;
 }
 .services h2 {
     padding-bottom: 20px;
@@ -155,13 +156,13 @@ technology
 ************************/
 .technology {
     background-color: var(--blue);
-    height: 90vh;
+    padding-bottom: 120px;
 }
 .technology article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 360px;
+    padding-top: 380px;
 }
 .technology h2 {
     padding-bottom: 20px;
@@ -176,4 +177,36 @@ technology
 }
 .technology article div:last-child img {
     width: 85%;
+}
+/************************
+clients
+************************/
+.clients {
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 0;
+}
+.clients article:first-child {
+    padding-bottom: 80px;
+}
+.clients h2 {
+    padding-bottom: 20px;
+}
+.clients article:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clients article:last-child div{
+    flex: 0 0 18%;
+}
+.clients article:last-child div img{
+    width: 100%;
+    opacity: .3;
+    transition: var(--transition);
+}
+.clients article:last-child div img:hover{
+    opacity: 1;
 }
