@@ -2,6 +2,7 @@
 :root {
     --blue: #3475ca; /* rgb(52, 117, 202) */
     --darkBlue: #262c3b;
+    --veryDarkBlue: #12222d;
     --white: #fafafa;
     --fontSize: 16px;
     --fontFamily: 'Poppins', sans-serif;
@@ -18,12 +19,16 @@ body {
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
     line-height: 1.6;
+    color: var(--white);
 }
 h2 {
     font-size: 2.4rem;
 }
+p {
+    font-size: 1.3rem;
+}
 .container {
-    max-width: 90%;
+    max-width: 86%;
     margin: auto;
 }
 a {
@@ -50,7 +55,7 @@ mainHeader
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 0;
 }
 .mainHeader .logo {
     color: var(--white);
@@ -76,12 +81,7 @@ mainHeader
     justify-content: center;
 }
 .mainHeader .content h1 {
-    color: var(--white);
     font-size: 4.2rem;
-}
-.mainHeader .content p {
-    color: var(--white);
-    font-size: 1.3rem;
 }
 /************************
 about
@@ -93,19 +93,16 @@ about
 .about article:first-child {
     height: 90vh;
     flex: 0 0 50%;
-    padding: 120px;
+    padding: 0 7%;
     background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .about h2 {
-    color: var(--white);
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .about p {
-    color: var(--white);
-    font-size: 1.3rem;
     padding-bottom: 30px;
 }
 .about article:last-child {
@@ -115,4 +112,46 @@ about
 .about article img {
     width: 100%;
     height: 100%;
+}
+/************************
+services
+************************/
+.services {
+    background-color: var(--veryDarkBlue);
+    height: 70vh;
+}
+.services article:first-child {
+    text-align: center;
+    padding: 100px 0;
+}
+.services h2 {
+    padding-bottom: 20px;
+}
+.services article:last-child {
+    position: relative;
+}
+.services article:last-child .serviceBoxes {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services article:last-child .serviceBoxes div{
+    background-color: var(--white);
+    text-align: center;
+    flex: 0 0 31%;
+    padding: 180px 0;
+}
+.services article:last-child .serviceBoxes img{
+    width: 120px;
+}
+.services article:last-child .serviceBoxes h3 {
+    color: var(--veryDarkBlue);
+    font-size: 1.55rem;
+}
+
+.next {
+    background-color: var(--blue);
+    height: 90vh;
 }
